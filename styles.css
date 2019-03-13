@@ -1,0 +1,113 @@
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-family: "Roboto Slab", serif;
+	font-weight: 300;
+	color: #111;
+	background: #edeff0;
+	background-image: url("../svgs/background.svg");
+}
+
+#container {
+	max-width: 960px;
+	background: #fff;
+
+	margin: 0 auto;
+	height: 100%; /* new line */
+}
+
+p {
+	max-width: 350px;
+	margin: 35px auto 0;
+	line-height: 2em;
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	color: #39add1;
+	font-weight: 700;
+}
+
+a:hover {
+	color: #111;
+}
+
+header {
+	padding-top: 10px;
+}
+
+header nav {
+	padding-bottom: 50px;
+	text-align: left;
+}
+
+header nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+main {
+	padding-top: 50px;
+}
+
+main h2 {
+	font-size: 28px;
+}
+
+footer {
+	width: 100%;
+	margin-top: 100px;
+	padding-bottom: 30px;
+	color: #ba8058;
+}
+
+/* Nav-Bar */
+.nav-bar {
+	display: flex;
+	padding-top: 2em;
+	margin-left: 4rem;
+}
+
+.nav-bar div img {
+	width: 15px;
+	height: 15px;
+	margin-right: px;
+}
+
+.nav-bar div .margin-left {
+	margin-left: 5px;
+}
+
+.logo {
+	width: 10em;
+	margin: 0 auto;
+}
+
+/* =================================
+  Media Queries min-width: 768px
+==================================== */
+
+@media (min-width: 768px) {
+	.nav-bar div .margin-left {
+		margin-left: 5px;
+	}
+
+	.nav-bar {
+		display: flex;
+		margin-left: 5em;
+		padding-top: 2em;
+	}
+
+	.nav-bar {
+		display: flex;
+		margin-left: 5em;
+		margin-bottom: 2em;
+		padding-top: 2em;
+	}
+
+	.nav-bar div .margin-left {
+		margin-left: 15px;
+	}
+}
