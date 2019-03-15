@@ -6,7 +6,7 @@ body {
 	font-weight: 300;
 	color: #111;
 	background: #edeff0;
-	background-image: url("svgs/background.svg");
+	background-image: url("svg/background.svg");
 }
 
 #container {
@@ -32,10 +32,6 @@ a {
 	text-decoration: none;
 	color: #39add1;
 	font-weight: 700;
-}
-
-a:hover {
-	color: #111;
 }
 
 header {
@@ -74,14 +70,14 @@ footer {
 	margin-left: 4rem;
 }
 
-.nav-bar div img {
+#icon {
 	width: 15px;
 	height: 15px;
-	margin-right: px;
+	fill: #39add1;
 }
 
-.nav-bar div .margin-left {
-	margin-left: 5px;
+.margin-left {
+	margin-left: 20px;
 }
 
 .logo {
@@ -92,6 +88,74 @@ footer {
 	width: 150px;
 	height: 150px;
 	margin: 0 10px;
+}
+
+/* =================================
+Icons Transform and Transition 
+====================================*/
+
+.icon-transition {
+	transition: transform 0.4s ease-out;
+	transform-origin: 50% 50%;
+}
+
+.nav-item:hover .icon-transition {
+	transform: scale(0.8);
+	fill: #111;
+}
+
+a:hover {
+	color: #111;
+}
+
+/* =================================
+Logo Transform and Transition 
+====================================*/
+img {
+	transition: transform 0.5s cubic-bezier(0.66, -0.68, 0.59, 1.23);
+}
+
+.logo:hover img {
+	transform: rotate(15deg) scale(1.1);
+}
+
+/* =================================
+  Color Corgis 
+==================================== */
+
+.nose_and_eyes {
+	fill: #2d3339;
+}
+.brows {
+	fill: #da8058;
+}
+.white {
+	fill: #fbfeff;
+}
+
+.muddy-waters {
+	color: #b97f5b;
+}
+.tacao {
+	color: #e9aa82;
+}
+.nutmeg {
+	color: #834b29;
+}
+.abbey {
+	color: #52595f;
+}
+
+/* =================================
+  Transform Corgis 
+==================================== */
+.rotate {
+	transition: transform 0.4s cubic-bezier(0.66, -0.68, 0.59, 1.23);
+	transform-origin: 50% 50%;
+}
+
+.corgi:hover .rotate {
+	transform: rotate(-13deg) scale(0.8);
 }
 
 /* =================================
