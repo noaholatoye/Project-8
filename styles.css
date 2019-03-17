@@ -111,11 +111,12 @@ a:hover {
 /* =================================
 Logo Transform and Transition 
 ====================================*/
-img {
+.logo {
 	transition: transform 0.5s cubic-bezier(0.66, -0.68, 0.59, 1.23);
+	transform-origin: 50% 50%;
 }
 
-.logo:hover img {
+.logo-container:hover .logo {
 	transform: rotate(15deg) scale(1.1);
 }
 
@@ -165,7 +166,6 @@ img {
 @media (min-width: 425px) {
 	.logo {
 		display: block;
-		width: 140px;
 		margin: 0 auto;
 	}
 
