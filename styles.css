@@ -17,10 +17,6 @@ body {
 	height: 100%; /* new line */
 }
 
-#Layer_1 {
-	display: none;
-}
-
 p {
 	max-width: 350px;
 	margin: 35px auto 0;
@@ -80,10 +76,6 @@ footer {
 	margin-left: 20px;
 }
 
-.logo {
-	display: none;
-}
-
 .corgi {
 	width: 150px;
 	height: 150px;
@@ -111,6 +103,10 @@ a:hover {
 /* =================================
 Logo Transform and Transition 
 ====================================*/
+#logo-text {
+	display: none;
+}
+
 .logo {
 	transition: transform 0.5s cubic-bezier(0.66, -0.68, 0.59, 1.23);
 	transform-origin: 50% 50%;
@@ -164,6 +160,10 @@ Logo Transform and Transition
 ==================================== */
 
 @media (min-width: 425px) {
+	#logo-text {
+		display: block;
+	}
+
 	.logo {
 		display: block;
 		margin: 0 auto;
